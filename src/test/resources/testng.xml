@@ -1,8 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="OrangeHRMLoginSuite">
-  <test name="LoginTests">
+<suite name="OrangeHRMTests">
+  <test name="OrangeHRMTestSuite">
     <classes>
       <class name="com.example.tests.LoginTests"/>
+      <class name="com.example.tests.AdminPageTests"/>
     </classes>
   </test>
 </suite>
