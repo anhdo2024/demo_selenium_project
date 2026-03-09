@@ -23,9 +23,9 @@ public class AddUserPage {
     private final By usernameInput = By.xpath("//label[text()='Username']/parent::div/following-sibling::div//input");
     private final By passwordInput = By.xpath("//label[text()='Password']/parent::div/following-sibling::div//input");
     private final By confirmPasswordInput = By.xpath("//label[text()='Confirm Password']/parent::div/following-sibling::div//input");
-    
-    private final By saveButton = By.xpath("//button[.//span[normalize-space()='Save']]");
-    private final By cancelButton = By.xpath("//button[.//span[normalize-space()='Cancel']]");
+
+    private final By saveButton = By.xpath("//button[contains(@class,'oxd-button') and normalize-space()='Save']");
+    private final By cancelButton = By.xpath("//button[contains(@class,'oxd-button') and normalize-space()='Cancel']");
 
 
     private final By fieldErrorMessages = By.cssSelector("span.oxd-input-field-error-message");

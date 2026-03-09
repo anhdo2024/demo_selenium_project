@@ -8,8 +8,6 @@
           <include name="tearDown"/>
           <include name="tc03_resetSearch_clearsFiltersAndRestoresList"/>
           <include name="setUp"/>
-          <include name="tc05_addUser_requiredValidationMessagesShown"/>
-          <include name="tc01_searchByExistingUsername_showsOnlyThatUser"/>
           <include name="tc02_searchByUserRole_admin_showsOnlyAdminUsers"/>
           <include name="tc10_usernameUniqueness_validationShownForDuplicate"/>
           <include name="tc04_addNewUser_success"/>
