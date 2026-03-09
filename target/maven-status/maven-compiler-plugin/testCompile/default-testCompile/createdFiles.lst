@@ -1,3 +1,6 @@
-com\example\base\BaseTest.class
 com\example\pages\LoginPage.class
 com\example\tests\LoginTests.class
+com\example\pages\AdminPage.class
+com\example\pages\AddUserPage.class
+com\example\base\BaseTest.class
+com\example\tests\AdminPageTests.class

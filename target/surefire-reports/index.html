@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-OrangeHRMLoginSuite" class="navigator-link">
-              <span class="suite-name border-passed">OrangeHRMLoginSuite</span>
+            <a href="#" panel-name="suite-OrangeHRMTests" class="navigator-link">
+              <span class="suite-name border-failed">OrangeHRMTests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-OrangeHRMLoginSuite" class="navigator-link ">
+                  <a href="#" panel-name="test-xml-OrangeHRMTests" class="navigator-link ">
                     <span>E:\Selenium_Practice\demo_open_project\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-OrangeHRMLoginSuite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-OrangeHRMTests" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-OrangeHRMLoginSuite" class="navigator-link ">
+                  <a href="#" panel-name="group-OrangeHRMTests" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-OrangeHRMLoginSuite" class="navigator-link ">
+                  <a href="#" panel-name="times-OrangeHRMTests" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-OrangeHRMLoginSuite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-OrangeHRMTests" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-OrangeHRMLoginSuite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-OrangeHRMTests" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-OrangeHRMLoginSuite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-OrangeHRMTests" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,26 +92,85 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">12 methods, 6 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OrangeHRMTests" class="hide-methods failed suite-OrangeHRMTests"> (hide)</a> <!-- hide-methods failed suite-OrangeHRMTests -->
+                      <a href="#" panel-name="suite-OrangeHRMTests" class="show-methods failed suite-OrangeHRMTests"> (show)</a> <!-- show-methods failed suite-OrangeHRMTests -->
+                    </span>
+                    <div class="method-list-content failed suite-OrangeHRMTests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.AdminPageTests" class="method navigator-link" hash-for-method="tc01_searchByExistingUsername_showsOnlyThatUser">tc01_searchByExistingUsername_showsOnlyThatUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.AdminPageTests" class="method navigator-link" hash-for-method="tc02_searchByUserRole_admin_showsOnlyAdminUsers">tc02_searchByUserRole_admin_showsOnlyAdminUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.AdminPageTests" class="method navigator-link" hash-for-method="tc03_resetSearch_clearsFiltersAndRestoresList">tc03_resetSearch_clearsFiltersAndRestoresList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.AdminPageTests" class="method navigator-link" hash-for-method="tc04_addNewUser_success">tc04_addNewUser_success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.AdminPageTests" class="method navigator-link" hash-for-method="tc05_addUser_requiredValidationMessagesShown">tc05_addUser_requiredValidationMessagesShown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.AdminPageTests" class="method navigator-link" hash-for-method="tc10_usernameUniqueness_validationShownForDuplicate">tc10_usernameUniqueness_validationShownForDuplicate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OrangeHRMTests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-OrangeHRMLoginSuite" class="hide-methods passed suite-OrangeHRMLoginSuite"> (hide)</a> <!-- hide-methods passed suite-OrangeHRMLoginSuite -->
-                      <a href="#" panel-name="suite-OrangeHRMLoginSuite" class="show-methods passed suite-OrangeHRMLoginSuite"> (show)</a> <!-- show-methods passed suite-OrangeHRMLoginSuite -->
+                      <a href="#" panel-name="suite-OrangeHRMTests" class="hide-methods passed suite-OrangeHRMTests"> (hide)</a> <!-- hide-methods passed suite-OrangeHRMTests -->
+                      <a href="#" panel-name="suite-OrangeHRMTests" class="show-methods passed suite-OrangeHRMTests"> (show)</a> <!-- show-methods passed suite-OrangeHRMTests -->
                     </span>
-                    <div class="method-list-content passed suite-OrangeHRMLoginSuite">
+                    <div class="method-list-content passed suite-OrangeHRMTests">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRMLoginSuite" title="com.example.tests.LoginTests" class="method navigator-link" hash-for-method="invalidLoginShouldShowErrorMessage">invalidLoginShouldShowErrorMessage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.LoginTests" class="method navigator-link" hash-for-method="invalidLoginShouldShowErrorMessage">invalidLoginShouldShowErrorMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRMLoginSuite" title="com.example.tests.LoginTests" class="method navigator-link" hash-for-method="validLoginShouldNavigateToDashboard">validLoginShouldNavigateToDashboard</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.AdminPageTests" class="method navigator-link" hash-for-method="tc06_addUser_simplePassword_showsStrengthWarning">tc06_addUser_simplePassword_showsStrengthWarning</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-OrangeHRMLoginSuite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.AdminPageTests" class="method navigator-link" hash-for-method="tc07_editExistingUser_roleChangePersists">tc07_editExistingUser_roleChangePersists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.AdminPageTests" class="method navigator-link" hash-for-method="tc08_deleteSingleUser_removesUser">tc08_deleteSingleUser_removesUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.AdminPageTests" class="method navigator-link" hash-for-method="tc09_bulkDelete_multipleUsersRemoved">tc09_bulkDelete_multipleUsersRemoved</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRMTests" title="com.example.tests.LoginTests" class="method navigator-link" hash-for-method="validLoginShouldNavigateToDashboard">validLoginShouldNavigateToDashboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-OrangeHRMTests -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,8 +181,191 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-OrangeHRMLoginSuite" class="panel OrangeHRMLoginSuite">
-          <div class="suite-OrangeHRMLoginSuite-class-passed">
+        <div panel-name="suite-OrangeHRMTests" class="panel OrangeHRMTests">
+          <div class="suite-OrangeHRMTests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.tests.AdminPageTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_searchByExistingUsername_showsOnlyThatUser">
+                  </a> <!-- tc01_searchByExistingUsername_showsOnlyThatUser -->
+                  <span class="method-name">tc01_searchByExistingUsername_showsOnlyThatUser</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //button[.//span[normalize-space()=&apos;Search&apos;]] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[.//span[normalize-space()=&apos;Search&apos;]]&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55125}, goog:processID: 86644, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55125/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71fca1a4f1e85f3f4656f645b055e663
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at com.example.pages.AdminPage.clickSearch(AdminPage.java:82)
+	at com.example.tests.AdminPageTests.tc01_searchByExistingUsername_showsOnlyThatUser(AdminPageTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc02_searchByUserRole_admin_showsOnlyAdminUsers">
+                  </a> <!-- tc02_searchByUserRole_admin_showsOnlyAdminUsers -->
+                  <span class="method-name">tc02_searchByUserRole_admin_showsOnlyAdminUsers</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //button[.//span[normalize-space()=&apos;Search&apos;]] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[.//span[normalize-space()=&apos;Search&apos;]]&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50644}, goog:processID: 75084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50644/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 68bca09bfa88c08f68ba0b6dc8572165
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at com.example.pages.AdminPage.clickSearch(AdminPage.java:82)
+	at com.example.tests.AdminPageTests.tc02_searchByUserRole_admin_showsOnlyAdminUsers(AdminPageTests.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc03_resetSearch_clearsFiltersAndRestoresList">
+                  </a> <!-- tc03_resetSearch_clearsFiltersAndRestoresList -->
+                  <span class="method-name">tc03_resetSearch_clearsFiltersAndRestoresList</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //button[.//span[normalize-space()=&apos;Search&apos;]] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[.//span[normalize-space()=&apos;Search&apos;]]&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55205}, goog:processID: 83364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55205/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30c0a5c190b032e61b88e59f427c9f9b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at com.example.pages.AdminPage.clickSearch(AdminPage.java:82)
+	at com.example.tests.AdminPageTests.tc03_resetSearch_clearsFiltersAndRestoresList(AdminPageTests.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc04_addNewUser_success">
+                  </a> <!-- tc04_addNewUser_success -->
+                  <span class="method-name">tc04_addNewUser_success</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}
+  (Session info: chrome=145.0.7632.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bd6be0e1233f904a8dba6b2744292347, findElement {value=username, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59591}, goog:processID: 87940, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59591/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd6be0e1233f904a8dba6b2744292347
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at com.example.pages.LoginPage.setUsername(LoginPage.java:25)
+	at com.example.pages.LoginPage.loginAs(LoginPage.java:41)
+	at com.example.tests.AdminPageTests.loginAndOpenAdminPage(AdminPageTests.java:14)
+	at com.example.tests.AdminPageTests.tc04_addNewUser_success(AdminPageTests.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc05_addUser_requiredValidationMessagesShown">
+                  </a> <!-- tc05_addUser_requiredValidationMessagesShown -->
+                  <span class="method-name">tc05_addUser_requiredValidationMessagesShown</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //button[.//span[normalize-space()=&apos;Save&apos;]] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[.//span[normalize-space()=&apos;Save&apos;]]&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53320}, goog:processID: 85032, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53320/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 77291a6640eb1d2000050d7d80bb1e44
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at com.example.pages.AddUserPage.clickSave(AddUserPage.java:87)
+	at com.example.tests.AdminPageTests.tc05_addUser_requiredValidationMessagesShown(AdminPageTests.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc10_usernameUniqueness_validationShownForDuplicate">
+                  </a> <!-- tc10_usernameUniqueness_validationShownForDuplicate -->
+                  <span class="method-name">tc10_usernameUniqueness_validationShownForDuplicate</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //button[.//span[normalize-space()=&apos;Save&apos;]] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[.//span[normalize-space()=&apos;Save&apos;]]&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56346}, goog:processID: 62324, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56346/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 356c7e9b27719ca15b18d1d8c450f2f9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
+	at com.example.pages.AddUserPage.clickSave(AddUserPage.java:87)
+	at com.example.tests.AdminPageTests.tc10_usernameUniqueness_validationShownForDuplicate(AdminPageTests.java:153)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRMTests-class-failed -->
+          <div class="suite-OrangeHRMTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.tests.AdminPageTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc06_addUser_simplePassword_showsStrengthWarning">
+                  </a> <!-- tc06_addUser_simplePassword_showsStrengthWarning -->
+                  <span class="method-name">tc06_addUser_simplePassword_showsStrengthWarning</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc07_editExistingUser_roleChangePersists">
+                  </a> <!-- tc07_editExistingUser_roleChangePersists -->
+                  <span class="method-name">tc07_editExistingUser_roleChangePersists</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc08_deleteSingleUser_removesUser">
+                  </a> <!-- tc08_deleteSingleUser_removesUser -->
+                  <span class="method-name">tc08_deleteSingleUser_removesUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc09_bulkDelete_multipleUsersRemoved">
+                  </a> <!-- tc09_bulkDelete_multipleUsersRemoved -->
+                  <span class="method-name">tc09_bulkDelete_multipleUsersRemoved</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRMTests-class-passed -->
+          <div class="suite-OrangeHRMTests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.example.tests.LoginTests</span>
@@ -144,9 +386,9 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRMLoginSuite-class-passed -->
-        </div> <!-- panel OrangeHRMLoginSuite -->
-        <div panel-name="test-xml-OrangeHRMLoginSuite" class="panel">
+          </div> <!-- suite-OrangeHRMTests-class-passed -->
+        </div> <!-- panel OrangeHRMTests -->
+        <div panel-name="test-xml-OrangeHRMTests" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">E:\Selenium_Practice\demo_open_project\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -154,83 +396,124 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;OrangeHRMLoginSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTests&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;OrangeHRMTests&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;OrangeHRMTestSuite&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.example.tests.LoginTests&quot;/&gt;
+      &lt;class name=&quot;com.example.tests.AdminPageTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LoginTests --&gt;
-&lt;/suite&gt; &lt;!-- OrangeHRMLoginSuite --&gt;
+  &lt;/test&gt; &lt;!-- OrangeHRMTestSuite --&gt;
+&lt;/suite&gt; &lt;!-- OrangeHRMTests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-OrangeHRMLoginSuite" class="panel">
+        <div panel-name="testlist-OrangeHRMTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for OrangeHRMLoginSuite</span>
+            <span class="header-content">Tests for OrangeHRMTests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">LoginTests (1 class)</span>
+                <span class="test-name">OrangeHRMTestSuite (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-OrangeHRMLoginSuite" class="panel">
+        <div panel-name="group-OrangeHRMTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for OrangeHRMLoginSuite</span>
+            <span class="header-content">Groups for OrangeHRMTests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-OrangeHRMLoginSuite" class="panel">
+        <div panel-name="times-OrangeHRMTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for OrangeHRMLoginSuite</span>
+            <span class="header-content">Times for OrangeHRMTests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_OrangeHRMLoginSuite');
-function tableData_OrangeHRMLoginSuite() {
+suiteTableInitFunctions.push('tableData_OrangeHRMTests');
+function tableData_OrangeHRMTests() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'invalidLoginShouldShowErrorMessage')
-data.setCell(0, 2, 'com.example.tests.LoginTests')
-data.setCell(0, 3, 16148);
+data.setCell(0, 1, 'tc05_addUser_requiredValidationMessagesShown')
+data.setCell(0, 2, 'com.example.tests.AdminPageTests')
+data.setCell(0, 3, 18893);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validLoginShouldNavigateToDashboard')
-data.setCell(1, 2, 'com.example.tests.LoginTests')
-data.setCell(1, 3, 10339);
-window.suiteTableData['OrangeHRMLoginSuite']= { tableData: data, tableDiv: 'times-div-OrangeHRMLoginSuite'}
+data.setCell(1, 1, 'tc10_usernameUniqueness_validationShownForDuplicate')
+data.setCell(1, 2, 'com.example.tests.AdminPageTests')
+data.setCell(1, 3, 17256);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tc02_searchByUserRole_admin_showsOnlyAdminUsers')
+data.setCell(2, 2, 'com.example.tests.AdminPageTests')
+data.setCell(2, 3, 15985);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tc01_searchByExistingUsername_showsOnlyThatUser')
+data.setCell(3, 2, 'com.example.tests.AdminPageTests')
+data.setCell(3, 3, 15927);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'tc03_resetSearch_clearsFiltersAndRestoresList')
+data.setCell(4, 2, 'com.example.tests.AdminPageTests')
+data.setCell(4, 3, 15502);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'tc06_addUser_simplePassword_showsStrengthWarning')
+data.setCell(5, 2, 'com.example.tests.AdminPageTests')
+data.setCell(5, 3, 13132);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'tc04_addNewUser_success')
+data.setCell(6, 2, 'com.example.tests.AdminPageTests')
+data.setCell(6, 3, 10039);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'tc07_editExistingUser_roleChangePersists')
+data.setCell(7, 2, 'com.example.tests.AdminPageTests')
+data.setCell(7, 3, 7773);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'tc09_bulkDelete_multipleUsersRemoved')
+data.setCell(8, 2, 'com.example.tests.AdminPageTests')
+data.setCell(8, 3, 6559);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'tc08_deleteSingleUser_removesUser')
+data.setCell(9, 2, 'com.example.tests.AdminPageTests')
+data.setCell(9, 3, 5231);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validLoginShouldNavigateToDashboard')
+data.setCell(10, 2, 'com.example.tests.LoginTests')
+data.setCell(10, 3, 3123);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'invalidLoginShouldShowErrorMessage')
+data.setCell(11, 2, 'com.example.tests.LoginTests')
+data.setCell(11, 3, 3057);
+window.suiteTableData['OrangeHRMTests']= { tableData: data, tableDiv: 'times-div-OrangeHRMTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
-              <div id="times-div-OrangeHRMLoginSuite">
-              </div> <!-- times-div-OrangeHRMLoginSuite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-OrangeHRMTests">
+              </div> <!-- times-div-OrangeHRMTests -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-OrangeHRMLoginSuite" class="panel">
+        <div panel-name="reporter-OrangeHRMTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for OrangeHRMLoginSuite</span>
+            <span class="header-content">Reporter output for OrangeHRMTests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-OrangeHRMLoginSuite" class="panel">
+        <div panel-name="ignored-methods-OrangeHRMTests" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-OrangeHRMLoginSuite" class="panel">
+        <div panel-name="chronological-OrangeHRMTests" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -243,23 +526,158 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidLoginShouldShowErrorMessage</span>
-                <span class="method-start">13426 ms</span>
+                <span class="method-start">4841 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29575 ms</span>
+                <span class="method-start">7899 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">29778 ms</span>
+                <span class="method-start">8017 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLoginShouldNavigateToDashboard</span>
-                <span class="method-start">53672 ms</span>
+                <span class="method-start">12035 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">64011 ms</span>
+                <span class="method-start">15158 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.tests.AdminPageTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15268 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc01_searchByExistingUsername_showsOnlyThatUser</span>
+                <span class="method-start">19336 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35266 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">35404 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc02_searchByUserRole_admin_showsOnlyAdminUsers</span>
+                <span class="method-start">39725 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">55711 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">55878 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc03_resetSearch_clearsFiltersAndRestoresList</span>
+                <span class="method-start">60344 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">75847 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">75997 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc04_addNewUser_success</span>
+                <span class="method-start">117989 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">128029 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">128179 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc05_addUser_requiredValidationMessagesShown</span>
+                <span class="method-start">143706 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">162599 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">162764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc06_addUser_simplePassword_showsStrengthWarning</span>
+                <span class="method-start">167066 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">180198 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">180350 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc07_editExistingUser_roleChangePersists</span>
+                <span class="method-start">190132 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">197905 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">198033 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc08_deleteSingleUser_removesUser</span>
+                <span class="method-start">202114 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">207345 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">207459 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc09_bulkDelete_multipleUsersRemoved</span>
+                <span class="method-start">211565 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">218124 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">218269 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc10_usernameUniqueness_validationShownForDuplicate</span>
+                <span class="method-start">222261 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">239517 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

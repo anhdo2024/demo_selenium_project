@@ -24,8 +24,8 @@ public class AdminPage {
     private final By userRoleDropdown = By.xpath("//label[text()='User Role']/parent::div/following-sibling::div//div[contains(@class,'oxd-select-text')]");
     private final By statusDropdown = By.xpath("//label[text()='Status']/parent::div/following-sibling::div//div[contains(@class,'oxd-select-text')]");
     private final By employeeNameInput = By.xpath("//label[text()='Employee Name']/parent::div/following-sibling::div//input");
-    private final By searchButton = By.xpath("//button[@type='submit' and .//span[text()='Search']]");
-    private final By resetButton = By.xpath("//button[contains(@class,'oxd-button--ghost') and .//span[text()='Reset']]");
+    private final By searchButton = By.xpath("//button[.//span[normalize-space()='Search']]");
+    private final By resetButton = By.xpath("//button[.//span[normalize-space()='Reset']]");
 
     // Table
     private final By tableRows = By.cssSelector("div.oxd-table-body div.oxd-table-card");
