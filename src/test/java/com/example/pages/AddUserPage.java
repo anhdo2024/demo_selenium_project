@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.Keys;
 
 import java.time.Duration;
 import java.util.List;
@@ -23,6 +24,7 @@ public class AddUserPage {
     private final By usernameInput = By.xpath("//label[text()='Username']/parent::div/following-sibling::div//input");
     private final By passwordInput = By.xpath("//label[text()='Password']/parent::div/following-sibling::div//input");
     private final By confirmPasswordInput = By.xpath("//label[text()='Confirm Password']/parent::div/following-sibling::div//input");
+    //private final By employeeNameText = By.xpath("//label[text()='Employee Name']/parent::div/following-sibling::div//input");
 
     private final By saveButton = By.xpath("//button[contains(@class,'oxd-button') and normalize-space()='Save']");
     private final By cancelButton = By.xpath("//button[contains(@class,'oxd-button') and normalize-space()='Cancel']");
@@ -58,17 +60,45 @@ public class AddUserPage {
         selectDropdownOption(statusDropdown, statusVisibleText);
     }
 
-    public void setEmployeeName(String name) {
-        WebElement input = wait.until(ExpectedConditions.visibilityOfElementLocated(employeeNameInput));
+    // public void setEmployeeName(String name) {
+    //     WebElement input = wait.until(ExpectedConditions.visibilityOfElementLocated(employeeNameInput));
+    //     input.clear();
+    //     input.sendKeys(name);
+    //     // In real tests you may need to select from autocomplete suggestions
+    // }
+
+    public void setEmployeeName(String employeeName) {
+
+        WebElement input = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//label[text()='Employee Name']/parent::div/following-sibling::div//input")
+        ));
+    
         input.clear();
-        input.sendKeys(name);
-        // In real tests you may need to select from autocomplete suggestions
+        input.sendKeys(employeeName);
+    
+        // wait for suggestion dropdown
+        By suggestion = By.xpath("//div[@role='listbox']//span");
+    
+        wait.until(ExpectedConditions.visibilityOfElementLocated(suggestion)).click();
     }
+    
+    // public void setUsername(String username) {
+    //     WebElement input = wait.until(ExpectedConditions.visibilityOfElementLocated(usernameInput));
+    //     input.clear();
+    //     input.sendKeys(username);
+    // }
 
     public void setUsername(String username) {
-        WebElement input = wait.until(ExpectedConditions.visibilityOfElementLocated(usernameInput));
-        input.clear();
-        input.sendKeys(username);
+
+        WebElement usernameInput = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//label[text()='Username']/parent::div/following-sibling::div//input")
+        ));
+    
+        usernameInput.clear();
+        usernameInput.sendKeys(username);
+    
+        // trigger validation (blur event)
+        usernameInput.sendKeys(Keys.TAB);
     }
 
     public void setPassword(String password) {
@@ -101,15 +131,17 @@ public class AddUserPage {
     }
 
     public String getUsernameUniquenessError() {
-        List<WebElement> errors = driver.findElements(usernameExistsError);
-        if (errors.isEmpty()) {
+        try {
+            WebElement error = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//label[text()='Username']/ancestor::div[contains(@class,'oxd-input-group')]//span")
+            ));
+            return error.getText().trim();
+        } catch (Exception e) {
             return "";
         }
-        return errors.get(0).getText();
     }
 
     public boolean isSuccessToastVisible() {
         return !driver.findElements(toastMessage).isEmpty();
     }
 }
-

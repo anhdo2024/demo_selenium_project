@@ -67,6 +67,10 @@ public class AdminPage {
         selectOptionFromDropdown(userRoleDropdown, roleVisibleText);
     }
 
+    // public void selectUserRole(String roleVisibleText) {
+    //     selectOptionFromDropdown(userRoleDropdown, roleVisibleText);
+    // }
+
     public void selectStatus(String statusVisibleText) {
         selectOptionFromDropdown(statusDropdown, statusVisibleText);
     }
@@ -79,9 +83,11 @@ public class AdminPage {
     }
 
     public void clickSearch() {
+
         wait.until(ExpectedConditions.elementToBeClickable(searchButton)).click();
+    
         wait.until(ExpectedConditions.or(
-                ExpectedConditions.visibilityOfAllElementsLocatedBy(tableRows),
+                ExpectedConditions.visibilityOfElementLocated(tableRows),
                 ExpectedConditions.visibilityOfElementLocated(noRecordsRow)
         ));
     }
@@ -110,16 +116,24 @@ public class AdminPage {
     }
 
     public boolean allRowsHaveRole(String role) {
+
         List<WebElement> rows = driver.findElements(tableRows);
-        if (rows.isEmpty()) {
-            return false;
-        }
+    
         for (WebElement row : rows) {
-            String rowRole = row.findElement(By.cssSelector("div.oxd-table-cell:nth-child(3)")).getText().trim();
+    
+            WebElement roleCell = row.findElement(
+                By.cssSelector("div.oxd-table-cell:nth-child(3) div")
+            );
+    
+            String rowRole = roleCell.getText().trim();
+    
+            System.out.println("Role found: " + rowRole);   // debug
+    
             if (!rowRole.equalsIgnoreCase(role)) {
                 return false;
             }
         }
+    
         return true;
     }
 
